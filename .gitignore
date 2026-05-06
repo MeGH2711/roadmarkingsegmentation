@@ -1,6 +1,4 @@
 /dataset
-/DNT
-/Segformer
 /VisDroneDataset
 /DeepLab_V3+/DeepLabV3+ - Training 1/best_finetune.pth
 /DeepLab_V3+/DeepLabV3+ - Training 1/best_pretrain.pth
@@ -9,3 +7,14 @@
 /DeepLab_V3+/DeepLabV3+ - Training 2/best_finetune.pth
 /DeepLab_V3+/DeepLabV3+ - Training 2/best_pretrain.pth
 /DeepLab_V3+/masks
+/Segformer/masks
+/Segformer/Training1/segformer_detected.mp4
+/Segformer/Training1/segformer_output/model
+/Segformer/Training2/checkpoints/segformer_best.pth
+/Segformer/Training2/segformer_output/model/model.safetensors
+/Segformer/Training4/checkpoints/segformer_best.pth
+/Segformer/Training4/checkpoints/segformer_running.pth
+/Segformer/Training4/checkpoints/class_weights.pt
+/Segformer/Training5/checkpoints/class_weights.pt
+/Segformer/Training5/checkpoints/segformer_best.pth
+/Segformer/Training5/checkpoints/segformer_running.pth
