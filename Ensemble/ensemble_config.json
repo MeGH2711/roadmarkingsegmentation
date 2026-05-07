@@ -1,0 +1,100 @@
+{
+  "created": "2026-05-07T08:00:23.841869",
+  "models": [
+    {
+      "name": "DeepLabV3+",
+      "backbone": "ResNet-101",
+      "ckpt": "/content/drive/MyDrive/CVRoadMarkDetection/BestModels/best_finetune.pth"
+    },
+    {
+      "name": "SegFormer",
+      "backbone": "MiT-B2",
+      "ckpt": "/content/drive/MyDrive/CVRoadMarkDetection/BestModels/segformer_best.pth"
+    }
+  ],
+  "ensemble_weights": [
+    0.5,
+    0.5
+  ],
+  "tta": true,
+  "num_classes": 14,
+  "img_size": 512,
+  "results": {
+    "soft_vote": {
+      "miou": 0.6764,
+      "per_class": {
+        "Background": 0.9892,
+        "BUS LANE": 0.8224,
+        "Yellow Markings": 0.7755,
+        "Line 1": 0.4804,
+        "Line 2": 0.3213,
+        "Crossing": 0.716,
+        "Romb": 0.733,
+        "SLOW": 0.776,
+        "Left Arrow": 0.5918,
+        "Forward Arrow": 0.7567,
+        "Fwd Arrow-Left": 0.6062,
+        "Fwd Arrow-Right": 0.749,
+        "Right Arrow": 0.6874,
+        "Bicycle": 0.7771
+      }
+    },
+    "hard_vote": {
+      "miou": 0.6234,
+      "per_class": {
+        "Background": 0.9903,
+        "BUS LANE": 0.7556,
+        "Yellow Markings": 0.4901,
+        "Line 1": 0.442,
+        "Line 2": 0.2389,
+        "Crossing": 0.7203,
+        "Romb": 0.7358,
+        "SLOW": 0.7093,
+        "Left Arrow": 0.5124,
+        "Forward Arrow": 0.6727,
+        "Fwd Arrow-Left": 0.6918,
+        "Fwd Arrow-Right": 0.7045,
+        "Right Arrow": 0.66,
+        "Bicycle": 0.7711
+      }
+    },
+    "deeplab_only": {
+      "miou": 0.474,
+      "per_class": {
+        "Background": 0.9852,
+        "BUS LANE": 0.6565,
+        "Yellow Markings": 0.449,
+        "Line 1": 0.3503,
+        "Line 2": 0.1716,
+        "Crossing": 0.6478,
+        "Romb": 0.6556,
+        "SLOW": 0.3979,
+        "Left Arrow": 0.3379,
+        "Forward Arrow": 0.5653,
+        "Fwd Arrow-Left": 0.3015,
+        "Fwd Arrow-Right": 0.4079,
+        "Right Arrow": 0.489,
+        "Bicycle": 0.7316
+      }
+    },
+    "segformer_only": {
+      "miou": 0.704,
+      "per_class": {
+        "Background": 0.9886,
+        "BUS LANE": 0.8303,
+        "Yellow Markings": 0.874,
+        "Line 1": 0.4658,
+        "Line 2": 0.3174,
+        "Crossing": 0.6985,
+        "Romb": 0.7284,
+        "SLOW": 0.7933,
+        "Left Arrow": 0.6572,
+        "Forward Arrow": 0.7601,
+        "Fwd Arrow-Left": 0.7511,
+        "Fwd Arrow-Right": 0.7978,
+        "Right Arrow": 0.6967,
+        "Bicycle": 0.7809
+      }
+    }
+  }
+}

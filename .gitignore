@@ -1,4 +1,5 @@
 /dataset
+/videos
 /VisDroneDataset
 /DeepLab_V3+/DeepLabV3+ - Training 1/best_finetune.pth
 /DeepLab_V3+/DeepLabV3+ - Training 1/best_pretrain.pth
@@ -18,3 +19,6 @@
 /Segformer/Training5/checkpoints/class_weights.pt
 /Segformer/Training5/checkpoints/segformer_best.pth
 /Segformer/Training5/checkpoints/segformer_running.pth
+/Segformer/Training6/checkpoints/segformer_best.pth
+/Segformer/Training6/checkpoints/class_weights.pt
+/Segformer/Training6/checkpoints/segformer_running.pth
